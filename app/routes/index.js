@@ -15,11 +15,5 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     },
 
-    saveReview(params) {
-      var newReview = this.store.createRecord('review', params);
-      newReview.save();
-      this.transitionTo('index');
-    }
-
   }
 });
